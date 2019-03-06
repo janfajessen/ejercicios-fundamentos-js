@@ -8,6 +8,15 @@
 
 // Aquí tu código
 
+function convierteEurosEnPesetas(euros) {
+    if(typeof euros === 'number' && !isNaN(euros)) {
+        return euros * 168;
+    } else {
+    throw new Error('convierteEurosEnPesetas debe recibir un number');
+    }
+}
+convierteEurosEnPesetas('4576')
+
 
 // Hasta aquí
 
