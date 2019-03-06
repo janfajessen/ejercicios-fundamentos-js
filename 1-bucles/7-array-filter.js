@@ -30,8 +30,18 @@ let gente = [{
         edad: 24
     },
     {
-        nombre: 'Jenny',
+        nombre: 'jenny',
         edad: 10
     },
 ]
 
+var miArrayJyMenos40 = []
+
+for (var persona of gente) {
+    var startWithJ = (persona.nombre[0] === 'J'  || persona.nombre[0] === 'j' );
+     if (persona.edad < 40 && startWithJ) {
+         miArrayJyMenos40.push (persona)
+     }
+}
+
+console.log(miArrayJyMenos40)

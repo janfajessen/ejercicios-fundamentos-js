@@ -33,3 +33,12 @@ let gente = [{
     },
 ]
 
+var miArray4letras = []
+
+for (var persona of gente) {
+    if (persona.nombre.length === 4){
+        miArray4letras.push (persona)
+    }
+}
+
+console.log(miArray4letras)

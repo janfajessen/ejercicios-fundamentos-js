@@ -4,7 +4,7 @@
 // Utilizad el bucle for of
 // y muéstralo por consola.
 
-let gente = [{
+var gente = [{
         nombre: 'Jamiro',
         edad: 45
     },
@@ -13,11 +13,11 @@ let gente = [{
         edad: 35
     },
     {
-        nombre: 'Paco',
+        nombre: 'Pacor',
         edad: 34
     },
     {
-        nombre: 'Pepe',
+        nombre: 'Peper',
         edad: 14
     },
     {
@@ -33,3 +33,13 @@ let gente = [{
         edad: 10
     },
 ]
+
+var miArrayEmpiezaJ = []
+
+for (var persona of gente) {
+    if (persona.nombre[persona.nombre.length-1] === 'r'){   //termina con r[-1]. Pero hay que saber el lenght de la palabra
+        miArrayEmpiezaJ.push (persona)
+    }
+}
+
+console.log(miArrayEmpiezaJ)
